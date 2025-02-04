@@ -1,9 +1,13 @@
 import { useState } from "react"
+import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+import { Link } from "react-router-dom";
+
 
 function AllCountry({data,setData}){
   const[filterRegion,setFilterRegion]=useState("All")
   const[searchCountry,setSearchCountry]=useState("")
   const[filteredData,setFilteredData]=useState(data)
+
   function filterCountry(e){
     const cont=e.target.value
     setSearchCountry(cont)
@@ -74,6 +78,9 @@ function AllCountry({data,setData}){
                         <span className="font-semibold text-[#cbe957]">Capital: </span>
                         {obj.capital[0]}
                       </p>
+                      <div className="w-full mt-2">
+                        <Link to={`/country/${obj.name.common}`}><button className="border pointer-events-auto cursor-pointer flex items-center gap-2 h-9  border-[#cbe953] px-2 "><p>know more</p><MdOutlineKeyboardDoubleArrowRight/></button></Link>
+                      </div>
                     </div>
                   </div>
                 </div>

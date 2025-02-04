@@ -5,7 +5,6 @@ import axios from "axios"
 
 function Country(){
     const API_ALL=import.meta.env.VITE_API_ALL
-    const API_COUNTRY=import.meta.env.VITE_API_COUNTRY
     const [data,setData]=useState([])
     const[loading,setLoading]=useState(true)
     useEffect(()=>{
