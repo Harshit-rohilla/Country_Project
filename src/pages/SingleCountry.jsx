@@ -20,11 +20,11 @@ function SingleCountry(){
     return(
         <>
         {loading?<Loader/>:<div className="flex-grow h-full flex flex-col gap-4 items-center justify-center w-full">
-                <div className="py-20 grid grid-cols-2 w-2/3 text-[#cbe953] border border-[#cbe953]">
-                    <div className="w-full flex justify-center items-center">
+                <div className="sm:py-20 py-10 grid sm:grid-cols-2 w-5/6 sm:w-2/3 text-[#cbe953] border border-[#cbe953]">
+                    <div className="w-full flex justify-center items-center mb-8 sm:mb-0">
                         {data[0]?.flags?.png && <img className="w-1/2 aspect-auto" src={data[0].flags.png} alt="country-img" />}
                     </div>
-                    <div className="w-full flex flex-col justify-center items-start gap-2">
+                    <div className="w-full ml-5 sm:ml-0 flex flex-col justify-center items-start gap-2">
                         <h1 className="text-3xl font-semibold mb-4">{data[0].name.official}</h1>
                         <p className="text-lg">Native Name: <span className="text-[#7d892d]">{data[0].name.common}</span></p>
                         <p className="text-lg">Population: <span className="text-[#7d892d]">{data[0].population}</span></p>
@@ -35,7 +35,7 @@ function SingleCountry(){
                     </div>
                     
                 </div>
-                <div className="w-2/3 flex justify-end">
+                <div className="w-5/6 sm:w-2/3 flex justify-end">
                     <button onClick={()=>{navigate(-1)}} className="text-[#cbe953] px-6 py-1 border cursor-pointer border-[#cbe953]">Back</button>
                 </div>
             </div>
