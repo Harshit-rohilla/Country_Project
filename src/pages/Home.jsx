@@ -15,7 +15,7 @@ function Home(){
                 <div className="flex flex-col justify-end">
                     <h1 className="sm:text-4xl text-3xl font-medium">Explore the World, One Country at a Time</h1>
                     <h1 className="text-sm mt-4">Discover the history, culture and beauty of every nation. sort, search and filter through countries to find details tou need.</h1>
-                    <button onClick={moveToCountry} className="border hover:cursor-pointer min-w-36 px-2 py-1 rounded-xl mt-4 flex items-center gap-2"><p>start exploring</p> <FaArrowRightLong/></button>
+                    <button onClick={moveToCountry} className="border hover:cursor-pointer min-w-36 max-w-40 px-2 py-1 rounded-xl mt-4 flex items-center gap-2"><p>start exploring</p> <FaArrowRightLong/></button>
                 </div>
                 <div className="flex justify-center items-center order-1 sm:order-none">
                     <img className="sm:w-5/6 w-full aspect-auto" src="/world.png" alt="earth-image" />
