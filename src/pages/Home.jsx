@@ -10,7 +10,7 @@ function Home(){
     }
     return(
         <>
-        <div className="sm:w-2/3 w-full px-4 sm:px-0 mx-auto text-[#cbe957] flex-grow">
+        <div className="sm:w-2/3 w-full px-4 sm:px-0 mx-auto text-[#cbe957] flex-grow mb-16">
             <div className="w-full grid sm:gap-0 gap-10 sm:grid-cols-2 mt-16">
                 <div className="flex flex-col justify-end">
                     <h1 className="sm:text-4xl text-3xl font-medium">Explore the World, One Country at a Time</h1>

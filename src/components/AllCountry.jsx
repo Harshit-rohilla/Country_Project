@@ -29,7 +29,7 @@ function AllCountry({data,setData}){
         <>
         <div className="w-full px-4 sm:px-0 mt-10 sm:mx-auto sm:w-2/3 flex justify-between items-center">
           <input onChange={filterCountry} type="text" value={searchCountry} placeholder="search your country" className="text-[#cbe953] border border-[#cbe953] outline-none py-1 px-2 rounded-sm"/>
-          <select onChange={filterWithRegion} value={filterRegion} className="text-[#cbe953] bg-black py-1 px-2 border border-[#cbe953] outline-none">
+          <select onChange={filterWithRegion} value={filterRegion} className="text-[#cbe953] bg-black cursor-pointer py-1 px-2 border border-[#cbe953] outline-none">
             <option>All</option>
             <option>Africa</option>
             <option>Americas</option>
@@ -38,7 +38,7 @@ function AllCountry({data,setData}){
             <option>Oceania</option>
           </select>
         </div>
-        <div className="flex-grow mt-10 w-full px-4 sm:px-0 sm:w-2/3 grid gap-x-6 gap-y-10 grid-cols-2 md:grid-cols-4 mx-auto">
+        <div className="flex-grow mb-16 mt-10 w-full px-4 sm:px-0 sm:w-2/3 grid gap-x-6 gap-y-10 grid-cols-2 md:grid-cols-4 mx-auto">
           {filteredData.map((obj, index) => (
             // Main container that handles hover state
             <div key={index} className="relative w-full h-72 [perspective:1000px]  hover:[&>div]:[transform:rotateY(180deg)]">

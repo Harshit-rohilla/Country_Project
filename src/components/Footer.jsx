@@ -5,7 +5,7 @@ import { IoIosMail } from "react-icons/io";
 function Footer(){
     return(
         <>
-        <footer className="w-full bg-[#313743] mt-16">
+        <footer className="w-full bg-[#313743]">
             <div className="w-full sm:max-w-2/3 mx-auto flex items-center py-4 px-2 sm:px-0">
                 <ul className="flex w-full justify-between">
                     <li className="flex items-center gap-2 sm:gap-4 text-xs sm:text-sm text-[#cbe957]">
